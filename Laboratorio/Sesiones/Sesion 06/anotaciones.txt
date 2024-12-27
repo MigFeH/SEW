@@ -1,0 +1,66 @@
+KML y SVG son vocabularios XML
+
+SVG (formato vectorial grafico) representa la altimetría 
+KML representa la planimetría
+
+
+numero de fotos 1 a 5
+numero de videos de 0 a 3
+numero de referencias de 3 a infinito
+
+latitud entre -90º y 90º
+longitud entre -180º y 180º
+altitud entre 0 y 5000 metros
+
+
+cambios anotados en un pdf:
+	1.tipos de tal a tal en tal
+
+	2.encoding a UTF-8
+
+	3.la segunda linea del schema de:
+		<xs:schema xmlns="http://tempuri.org/circuito" elementFormDefault="qualified" targetNamespace="http://tempuri.org/circuito" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	a:
+		aaa
+
+	4.
+
+
+
+hacer el kml con xpath y python.
+	Hay que sacar las coordenadas con el xpath (SIN BUCLES ANIDADOS NI NADA)
+	Al usar xpath con schema hay que hacer las expresiones con los prefijos del schema {http://www.uniovi.es}elemento
+	
+	Generamos el codigo KML con generacion de codigo basada en plantillas
+		Epilogo
+			cabecera
+			relleno???
+			cierre???
+
+	circuito.kml
+		Usamos google earth para pintarnos el circuito y saber que está bien validado (y que las coordenadas son correctas)
+
+	para pintar un svg:
+		la coordenada x es vertical (negativa [hay que poner una J y multiplicar la coordenada por ello])
+		la coordenada y es horizontal
+
+
+longitudes y latitudes en una XPath // no estoy seguro
+altitudes en otra XPath // no estoy seguro
+
+
+Los nombres de los atributos SI se pueden repetir
+Los nombres de los elementos NO se pueden repetir
+
+
+xpath: {http://www.uniovi.es}puntos/{http://www.uniovi.es}tramo/{http://www.uniovi.es}coordenadas
+path: d:/Clase/SEW/Laboratorio/F1Desktop/xml/circuitoEsquema.xml
+
+xpath Longitudes: {http://www.uniovi.es}puntos/{http://www.uniovi.es}tramo/{http://www.uniovi.es}coordenadas/*[@tipo='Longitud']
+xpath Latitudes: {http://www.uniovi.es}puntos/{http://www.uniovi.es}tramo/{http://www.uniovi.es}coordenadas/*[@tipo='Latitud']
+xpath Altitudes: {http://www.uniovi.es}puntos/{http://www.uniovi.es}tramo/{http://www.uniovi.es}coordenadas/*[@tipo='Altitud']
+
+
+https://www.coordenadas-gps.com/convertidor-de-coordenadas-gps
+
+

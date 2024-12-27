@@ -1,0 +1,26 @@
+text-decoration=none // atributo para quitarle el subrayado a los links
+
+
+
+para el video hacer un frame que recorte el
+tamaño del video con las mismas dimensiones que
+las de la imagen (https://www.canva.com/design/DAGS5tNBy_Q/t9ZtG4PEkZjCQS8tNbAfDQ/edit?ui=eyJFIjp7IkE_IjoiSCJ9LCJHIjp7IkEiOnRydWV9fQ&category=tADs1de8MlY)
+
+
+
+modulo de css: flex-box
+
+header {display:flex;} // comportamiento flex
+	flex-direction:row;
+
+
+que con un tamaño de pantalla determinado (para movil)
+	que el flex-direction sea en columna
+
+
+quitar migas en movil porque no nos sirven
+
+
+cambiar los px porque son unidades absolutas y cambiarlos
+por unidades relativas
+

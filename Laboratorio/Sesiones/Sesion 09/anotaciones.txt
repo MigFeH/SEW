@@ -1,0 +1,86 @@
+apis html5 != apis datos != apis mapas
+
+
+onload => funcion asincrona que se ejecuta cuando
+	se completa una operacion de lectura
+
+---------------------------------------------------
+Para el ejercicio de API de geolocalizacion y mapas:
+	-Uso de mapbox (recomendable) o google maps
+
+	-El usuario nos tiene que dar permiso para 
+	que nos dé su geolocalizacion pidiéndoselo.
+	Si no nos da permiso, damos la info disponible
+	sin su geolocalizacion.
+
+	-Usar el objeto navigator para rellenar la pagina
+	con la geolocalización.
+
+	navigator.geolocation.getCurrentPosition(this.getPosicion().bind(this), this.verErrores.bind(this)) <-- Metodo a llamar | Si el usuario nos da permiso => nos entra por el metodo del primer parámetro | Si el usuario no nos da el permiso o se produce un error => Entra en el método del segundo parámetro
+
+	A mayor accuracy menor precision
+
+	LA POSICION LA OBTIENE A TRAVES DE LA DIRECCION IP
+
+	Si el usuario no da permiso, el objeto de geolocalización NO se rellena (dejamos undefined los valores en vez de rellenarlos)
+---------------------------------------------------
+Para el ejercicio del mapa estático:
+
+El mapa estático a nivel de html es una etiqueta <img />
+
+google tiene un metodo getMapaEstatico
+
+la geolocalizacion la obtiene de la ip (ojo con la accuracy)
+
+---------------------------------------------------
+Para el ejercicio del mapa dinámico:
+
+El mapa dinamico va a ser un contenedor que va a tener el
++ y - del zoom, el muñeco del streetview, etc.
+El contenedor se puede hacer con view, section, etc.
+
+la geolocalizacion la obtiene de la ip (ojo con la accuracy)
+	
+
+LOS MAPAS DINAMICOS NO SON ACCESIBLES PORQUE NO LOS LEEN
+LOS LECTORES DE PANTALLA. HAY QUE DOCUMENTAR EL ERROR
+
+Los errores de validación de html sobre los elementos que
+contienen un mapa dinamico que no se puedan arreglar, 
+HAY QUE DOCUMENTARLOS
+
+---------------------------------------------------
+Sobre el html circuito:
+circuitoEsquema.xml
+circuito.kml
+perfil.svg
+
+Cargamos con Apifile leyendo linea a linea como archivos de texto los ficheros:
+-El circuitoEsquema.xml:
+Cargamos la info y la calcamos en el html
+
+-El circuito.kml:
+La info la representamos sobre un mapa dinámico que tendrá:
+	Los puntos de la planimetría
+
+-El perfil.svg:
+Lo mismo que con circuito.kml.
+La etiqueta es <svg> hay que forzar en la css un width para que no se desborde
+
+---------------------------------------------------
+El ultimo ejercicio:
+
+El uso de canvas o full screen es exclusivo (no se pueden
+usar las dos a la vez)
+
+Hay que pensar primero lo que queremos hacer y las 3
+apis que vamos a usar. HAY QUE USAR LAS 3 (no se pueden
+usar 2 apis o 1 y el resto darle un uso que no "merece")
+
+Hay que elegir 3 apis de la lista de apis
+
+
+
+url de la pagina de la api del mapa estático: https://docs.mapbox.com/playground/static/
+
+

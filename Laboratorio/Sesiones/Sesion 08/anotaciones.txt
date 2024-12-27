@@ -1,0 +1,89 @@
+jQuery: biblioteca externa
+
+
+invocar a jQuery: $('selector').metodo() o propiedad como con el query selector pero con mas potencia
+		  $('body')
+	   	  $('body main')
+		  $('article h3')
+
+crear elementos:
+	una imagen: $('<img/>').attr('src','---').attr('alt','---')
+
+
+Nos interesa el core y la version 3.x (actualmente estamos en la 3.7)
+
+Usar Flickr para la foto del index
+	- CLAVE: 86e3c1f564a9d22974389506fb27f85e
+
+	- SECRETO: 5bc9c4b413af6869
+
+
+
+Poner imagen de fondo con jQuery:
+	$('body').css('background-size','cover') para que la imagen ocupe todo y se estire
+		=> <body style="background-size: cover"> // jQuery pone atributos style
+
+	Usamos el tagmode con all para que filtre con todas las tags haciendo un AND entre todas las tags en la busqueda
+
+
+URL de la API de tiempo meteorológico:
+https://openweathermap.org/forecast5  <==>  tiempo para 5 dias cada 3 horas	
+
+		Tenemos que seleccionar la misma franja de tiempo para cada día
+
+		
+		Mostrar: Temp max, temp minima, hiumedad y cantidad de precipitacion y para cada dia poner un icono de tiempo (propiedad css icon: 10d siendo 10d el nombre de una imagen. Si la concatenamos url/10d.png tendremos la imagen del icono)
+
+
+		Cada bloque de informacion de tiempo es un articulo => DEBEREIAMOS TENER 5 ARTICULOS EN ESE DOCUMENTO
+
+		<article> // resolución válida del ejercicio
+			<img --- />
+			<h3> --- </h3>
+			<p> --- </p>
+		</article>
+
+		Es mas facil mostrar la informacion gráfica pintandolo en vertical con un flex en vertical (el icono arriba del todo y la info debajo del icono)
+
+
+Consultas con openWeather:
+	$.ajax()
+
+
+
+Link con la lista de carreras: https://api.jolpi.ca/ergast/f1/current/
+
+	El datatype es json, no xml
+
+	Arriba: la bandera a cuadros de una carrera
+	Debajo: toda la informacion intentando reciclar la CSS anterior (usar el agenda-grif.css que nos dan)
+
+
+Los estilos de article elements los vamos a reciclar la semana que viene		
+
+
+En semaforo: hacer una media query en la que el semaforo ocupe todo el ancho de la pagina en movil para que el texto de los botones no de salga de su respectivo boton
+
+
+
+https://www.flickr.com/photos/jherran/2363070971/in/photolist-4APmEX-4ATsYQ-4ANPVg-4ATxz5-4ATpW5-4APhSH-4ATxzb-4AT4Pw-4ATuKW-4ATpWo-4ATsZh-4ATpW3-dWU5dN-4ANPUZ-4AT4PJ-4AP5uk-4AP5un-4AT4Ps-4APmEP-HsjP7f-4ATuKE-4ATpWf-4ATuKN-4APmF2-4AP1FB-amiMLM-4ATpW1-4ANPV8-4ATxzf-4ANPVa-4APmEZ-4ATuL5-4AP5ur-4APmF6-4AP1Ft-4mLymh-4MCrz6-66xHfF-66xHk6-9mhkyy-9mhj4N-GBJeag-2iAGfUx-DM9K7T-9mhk7b-eku4ix-Jiy8B-pUvvWD-JiuK7-bvbf8y
+	Remote address = 18.66.249.82:443
+
+
+consulta.lat = 41.564792; // a saber de que ye: 41.567811
+        consulta.lon = 2.261216; // a saber de que ye: 2.255115
+
+
+imagen: https://www.flickr.com/photos/jherran/2363878608/in/photolist-4ATxyY-4ATsZ3-4AP1Fk-4ATuKJ-4ATsZ1-4AP1Fc-4ANPV2-4AP1Fz-4ATxz3-4AP5uv-4APhSz-4AT4PE-4AT4PA-4ATpWb-4ATsYQ-4ANPVg-4ATpW5-4APhSH-4ATxzb-4AT4Pw-4ATuKW-4ATpWo-4ATsZh-4ATpW3-dWU5dN-4ANPUZ-4AT4PJ-4AP5uk-p3MxeS-ammzBo-4AT4Ps-4APmEP-4ATuKE-4ATpWf-4ATuKN-4APmF2-4AP1Fp-4ATpW1-4ANPV8-4ATxzf-4ANPVa-4ATuL5-4AP5ur-4APmF6-4AP1Ft-4mLymh-4MCrz6-66xHfF-66xHk6-9mhkyy/
+
+
+
+
+
+
+RECUERDA VALIDAR LOS HTML OTRA VEZ Y EL RENDIMIENTO DE LA PAGINA AHORA
+
+
+
+
+

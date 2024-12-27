@@ -1,0 +1,75 @@
+htdocs: ficheros y carpetas de nuestra web
+
+http://localhost/F1Desktop
+
+
+atributos data de html 5:
+	atributos especificos que no están en el estandar
+	<p data-miatt="__"> el parrafo ahora tiene el atributo miatt
+
+window con script 1
+	window.pais > tiene incluido el script 1
+	window.economia > tiene incluido el script 1
+LOS SCRIPTS QUE SE IMPORTAN SE HEREDAN EN LA JERARQUIA DE WINDOW
+
+
+json: clave-valor
+hay que hacer un array de 12 elementos json (12 tarjetas)
+
+
+flexbox:
+	largo y ancho con medidas relativas
+	tarjeta: 25% de ancho y lo que sea de alto
+	back: espaciado del flexbox (hacerlo homogeneo)
+
+
+divs para hacer las luces
+
+class para hacer la animacion de la luz
+
+
+aspect-ratio:1 => mismo ancho y alto
+border-radius:50% => achatar las esquinas hacia el centro
+
+
+color de las luces no sean negros puros:
+	usar canal alpha para tener transparencia
+
+-----------------------------------------------------------------
+ESTÁS YA CON EL ENCENDIDO DEL SEMÁFORO
+
+keyframes para declarar animaciones:
+	animacion: el cambio de valor de un atributo
+
+animation-fill-mode: forwards; nos interesa hacerlo con esto
+
+
+
+pais: españa
+ciudad cercana: barcelona
+
+var pais = new País("España","Barcelona","1.655.956");
+
+
+
+
+
+-Se puede usar el div para representar las luces del semaforo
+	NO SE PUEDE USAR EL DIV COMO SELECTOR CSS
+
+-Se puede usar el atributo class de HTML para usarlo en la
+funcionalidad de apagar y encender las luces del semaforo.
+	SE PUEDE USAR EL ATRIBUTO CLASS COMO SELECTOR CSS
+
+
+
+-La cuadrícula tendrá tantas columnas como numero de luces que el
+semáforo tenga.
+
+-En cuanto a las filas:
+	-El encabezado (h2) irá encima de las luces del semáforo
+	-Los botones debajo del semáforo
+	-La información del tiempo de reacción se situará debajo
+	 de los botones
+Por tanto, la cuadrícula tendrá 4 filas.
+

@@ -1,0 +1,44 @@
+Formulario con 4 campos debajo del párrafo del semáforo:
+	Nombre
+	Apellidos del usuario que ha completado el semáforo
+	
+	-Solo lectura:
+	El tiempo que hizo
+	La dificultad con la que jugó
+
+Usar el formulario a través de POST ($_POST) (enviaremos información (!= datos))
+
+	$_POST es un array asociativo
+
+Con AJAX enviábamos datos con el GET
+
+
+Cuando se detenga el semáforo --> poner los 10 records
+
+
+- Ejercicio 3:
+Un carrusel con 10 imagemes del país del circuito en index y viajes??.
+
+	Un carrusel fotos con flechas para pasar de una foto a otra
+
+Metodo css de JQuery PERMITIDO para hacer las traslaciones de las fotos
+
+
+Método a invocar: 
+	getInfo (de la parte PRIVADA de la API (las fotos de tu perfil))
+	la URL del código de cueva con los parámetros cambiados a nuestro favor
+
+
+Implode, (separador, array de parámetros)
+	genera un "separador (concatenación) valor i-esimo del array" y 
+	devuelve un String con el resultado de la ejecución explicada
+
+
+
+
+
+
+titulo: Guarda tu puntuación:
+botón: guardar
+
+CREATE TABLE `records`.`registro` (`nombre` VARCHAR(30) NOT NULL , `apellidos` VARCHAR(30) NOT NULL , `nivel` VARCHAR(10) NOT NULL , `tiempo` FLOAT NOT NULL ) ENGINE = InnoDB;

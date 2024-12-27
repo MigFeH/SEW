@@ -1,0 +1,85 @@
+cambio del euro al dólar americano (porque el país del circuito usa el euro)
+
+
+clase moneda que haga la consulta al servicio.
+	El marcado no le importa (la presentación)
+
+	variable global con identifiacor de la moneda origen (EUR) y de la moneda destino (USD)
+
+	
+Formato de destino de la respuesta:
+	$datos = file_get_contents(url) // hace la petición y guardamos la respuesta
+
+	Salida:
+		JSON => json_decode // convierte un string a un objeto json
+		PHP SERIAL => unserialize // coge un string y lo convierte a un objeto de php
+		XML => new SimpleXMLElement($datos) // convierte un string a un objeto xml
+
+
+Accedemos a los nodos con: ->
+Accedemos a los atributos de los nodos con: nodo["nombreAtributo"]
+
+
+links a apis encontradas para el cambio de moneda:
+	https://cambio.today/api
+	https://dinero.today/pages/api (ESTAMOS USANDO ESTA Y FUNCIONA)
+	https://www.xe.com/xecurrencydata/
+	https://currencyapi.net/documentation
+
+
+	
+
+
+
+
+-- ULTIMO EJERCICIO (EL EJERCICIO LIBRE) --
+Una aplicacion relacionada con la f1 con una base de datos con al menos 5 tablas normalizadas en 3º persona (no tienen porqué ser 5 entidades sino pueden ser 3 entidades y 2 tablas relacionales)
+
+
+Que se cree la bbdd y que se inicialice la bbdd dentro de la propia aplicación
+
+Que se importe y exporte la información a ficheros csv
+
+
+Nueva entrada en el apartado de juegos
+
+los ficheros se meten en la carpeta php
+
+
+hacer el diagrama entidad relación de la bbdd con un programa que pase el sql a diagrama entidad relación
+
+
+csv con los datos iniciales
+sql con las sentencias de creación de la bbdd y tablas
+
+
+
+
+
+csv con los datos iniciales: los circuitos
+	1 csv por era
+csv para importar: las vueltas con los pilotos, coche, etc
+	1 csv por era
+exportar csv: con todos los circuitos y vueltas
+	1 csv por era
+
+
+
+
+
+https://www.youtube.com/watch?v=dZGgYfITJUw // minuto 2:02 (1960)
+https://www.youtube.com/watch?v=JAw4LEmFJVg // minuto 1:20 (1988)
+
+https://www.youtube.com/watch?v=5SoZiTxdQyw&t=57s // minuto 1:18 [v12]
+
+https://www.youtube.com/watch?v=duSDK3mSlb0 // v10 (sustituir el que ya tenemos por este)
+
+https://www.youtube.com/watch?v=WhK0seC-vmc [tiene 1995 [V12], V10 y V6 (minuto 4:12)]
+
+https://www.youtube.com/watch?v=XF1afexJqtI // tiene el V8 (minuto 0:52)
+
+
+
+
+
+
